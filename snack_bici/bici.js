@@ -32,7 +32,7 @@ for (let i = 0; i < listaBici.length; i++) {
     const singleBike = listaBici[i];
 
     // Genero numero casuale grazie alla funzione e stabilisco il peso
-    singleBike.peso = getRandomNum(5, 60)
+    singleBike.peso = getRandomNum(5, 50)
 
     // Estrapolo il peso e lo aggiungo in un array esterno
     const { peso } = singleBike
@@ -43,7 +43,7 @@ for (let i = 0; i < listaBici.length; i++) {
     // Inserisco il tutto nell'html
     listContainer.innerHTML += `<li>
                                     <h3>${singleBike.nome}</h3>
-                                    <p>${peso}</p>
+                                    <p>${peso} Kg</p>
                                 </li>`
 }
 
@@ -52,16 +52,18 @@ const orderWeight = totalWeight.sort(function (a, b) { return a - b })
 
 // Creo un array vuoto dove inserirò il nome della bici che avrà
 // il peso uguale a quello minore
-const bikeWeight = []
+const bikeLight = []
 
 // ciclo la lista delle bici con stavolta inserita la chiave peso
 for (let i = 0; i < listaBici.length; i++) {
     const item = listaBici[i];
 
+    const { peso } = item
+
     // Se corrisponde al valore più basso dell'array di tutti i pesi 
     // puho il nome nell'array delle bici leggere
-    if (orderWeight[0] === item.peso) {
-        bikeWeight.push(item.nome)
+    if (orderWeight[0] === peso) {
+        bikeLight.push(item.nome)
     }
 
 }
@@ -69,7 +71,7 @@ for (let i = 0; i < listaBici.length; i++) {
 // Stampo nell'html il nome della/e bici più leggera/e
 lightBikeContainer.innerHTML += `<div>
                                 <h3>Bici più leggere</h3>
-                                <p>${bikeWeight}</p>
+                                <p>${bikeLight}</p>
                                 </div>`
 
 

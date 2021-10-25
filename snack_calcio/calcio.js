@@ -61,7 +61,7 @@ for (let i = 0; i < listTeam.length; i++) {
     // Infine inserisco nell'html i nuovi valori
     teamPostGame.innerHTML += `<li>
                                   <h3>${nome}</h3>
-                                  <p>falli subiti: ${falliSubiti}</p>
+                                  <p>falli subiti: <span class="num_mark">${falliSubiti}</span></p>
                                </li>`
 }
 

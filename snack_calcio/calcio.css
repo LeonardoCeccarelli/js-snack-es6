@@ -4,16 +4,23 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: linear-gradient(to right, rgb(6, 26, 56), rgb(24, 52, 94), rgb(6, 26, 56));
+    color: white;
+}
+
 h1 {
     text-align: center;
     padding: 40px 0;
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+
 }
 
 h2 {
     padding: 50px 0;
     text-align: center;
     letter-spacing: 2px;
-    background-image: linear-gradient(rgb(96, 93, 255), white, white, white);
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
 }
 
 .team_container ul,
@@ -21,14 +28,20 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 10px;
 }
 
 .team_container ul li,
 .team_post_game ul li {
     list-style: none;
-    min-width: 20%;
+    min-width: 15%;
     text-align: center;
     margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(4, 15, 31);
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border: 2px solid rgb(134, 255, 255);
 }
 
 .team_container ul li > *,
@@ -38,11 +51,16 @@ h2 {
 
 .team_container ul li h3,
 .team_post_game ul li h3 {
-    color: blue;
+    color: rgb(129, 188, 255);;
     font-weight: bold;
 }
 
 .team_container ul li p,
 .team_post_game ul li p {
     font-style: italic;
+}
+
+.num_mark {
+    color: rgb(255, 115, 0);
+    font-weight: bold;
 }

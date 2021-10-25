@@ -3,3 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-image: linear-gradient(to right, rgb(6, 26, 56), rgb(24, 52, 94), rgb(6, 26, 56));
+}
+
+h1 {
+    padding: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    padding: 30px 60px;
+    border-radius: 20px;
+    background-image: radial-gradient(circle, black, rgb(65, 60, 60), lightgrey, black);
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+    border: 2px solid black;
+
+}
+
+.container {
+    display: flex;
+    height: 400px;
+    justify-content: space-around;
+    align-items: center;
+}
